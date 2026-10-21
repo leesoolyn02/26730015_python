@@ -16,12 +16,22 @@ print(a)
 '''
 
 ''''
-#sort 리스트.sort(reverse=False)
+#sort 리스트.sort(reverse=False) #원본 리스트 자체를 정렬
 a.sort()
 print(a)
+>>>1 2 3 4 5
 
-#sorted sorted(리스트)
-sorted()
+
+#sorted sorted(리스트) 원본은 유지하고 새로운 리스트 생성
+a = [3, 1, 5, 2, 4]
+
+b = sorted(a)
+
+print(a)
+print(b)
+>>>
+[3, 1, 5, 2, 4] #a 그대로
+[1, 2, 3, 4, 5] #b 에 저장
 
 #max,min,sum은 이터러블(iterable) 데이터(인덱스를 넣을 수 있는)를 넣을 수 있는 함수
 '''
@@ -133,6 +143,8 @@ a.remove(50) # remove("값")
 a.pop() # pop(index)
 print(a)
 
+
+a="Hello"
 #ell
 print(a[1:4:1])
 
