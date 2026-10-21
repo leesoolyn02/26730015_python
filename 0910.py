@@ -1,12 +1,14 @@
 for i in range(10):
     print(i,end=" ")
-
+>>>0 1 2 3 4 5 6 7 8 9
 
 for i in range(1,10,2):  #2칸씩
     print(i,end=" ") 
+>>>1 3 5 7 9
 
 for i in range(10,1,-2):  #10에서 거꾸로 2칸씩
     print(i,end=" ") 
+>>>10 8 6 4 2
 
 for _ in range(5):
     print("안녕하세요")
@@ -17,16 +19,14 @@ for i in range(1,101):        #실습1: 1부터 100까지의 수를 모두 출�
 
 
 for i in range(10,-1,-1):  #10부터 0까지
-    print(i,end=" "'''
+    print(i,end=" ")'''
+>>> 10 9 8 7 6 5 4 3 2 1 0 
+
 
 #복합대입연산자
 
-
-'''for i in [10,20,30,40] #4번 반복과 동일'''
-
-
-'''a=[10,20,30,40] #이렇게 쓰면 리스트 재활용이 가능함 
-
+'''for i in [10,20,30,40]: #4번 반복과 동일
+    a=[10,20,30,40] #이렇게 쓰면 리스트 재활용이 가능함 
 for i in a :
     print(i,end=" ")'''
 
@@ -39,6 +39,7 @@ for i in a :
     print(i,end=" ")
 
 print("\n","-"*50)'''
+
 #range
 '''for i in range(len(a)) : 
     print(i,a[i],end =" ")  # 아니면 print(a[i],end =" ")'''
