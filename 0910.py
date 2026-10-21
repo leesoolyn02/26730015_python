@@ -40,18 +40,26 @@ for i in a :
 
 print("\n","-"*50)'''
 
+
+
 #range
 '''for i in range(len(a)) : 
-    print(i,a[i],end =" ")  # 아니면 print(a[i],end =" ")'''
+    print(i,a[i],end =" ")  # 아니면 print(a[i],end =" ") '''
+>>>0 10 1 20 2 30 3 40 아니면 10 20 30 40
 
 
+'''for i in range(len(a)-1,-1,-1) : '''
+    print(i,a[i],end =" ")
+>>>3 40 2 30 1 20 0 10
 
-'''for i in range(len(a)-1,-1,-1) : 
-    print(i,a[i],end =" ")'''
-
-
-'''for i in range(len(a)-1,-1,-1) : 
+'''for i in range(len(a)-1,-1,-1) : '''
     print(i,a[i])
+3 40
+2 30
+1 20
+0 10
+
+
 
 i=1
 
@@ -60,29 +68,20 @@ while True:
         break
     print(i, end =" ")
     i+=1
+>>>1 2 3 4 5 6 7 8 9
 
 
 
-
-i=0
+i = 0
 
 while True:
-     i+=1
-    print(i, end =" ")
-
-     if i == 10:
+    i += 1
+    print(i, end=" ")
+    
+    if i >= 10:
         break
+>>>1 2 3 4 5 6 7 8 9 10 
 
-
-
-i=0
-
-while 0:
-     i+=1
-    print(i, end =" ")
-
-     if i >= 10:
-        break '''
 
 
 '''# 제어 변수를 선언한다.
@@ -136,7 +135,7 @@ while True:
         continue
     print(i,end=" ")
     i+=1
-
+>>>1 2
 
 
 def get_area(radius):    #정의
