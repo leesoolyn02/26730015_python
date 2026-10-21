@@ -1,11 +1,12 @@
 #2주차 p76 get_area
 
-'''def get_area(radius):              #함수 출력
+def get_area(radius):              #함수 출력
     area = 3.14 * radius**2
     return area
 
 result = get_area(3)                    #함수 호출 -> 저장
 print("반지름이 3인 원의 면적=", result)
+
 
 #응용 제출
 def get_area(width, height):
@@ -13,7 +14,8 @@ def get_area(width, height):
     return area
 
 result = get_area(5, 3)
-print("사각형의 넓이 =", result)'''
+print("사각형의 넓이 =", result)
+
 
 
 #2주차 p46 중첩 반복문   
@@ -22,16 +24,25 @@ print("사각형의 넓이 =", result)'''
     for x in range(10):
         print("*",end="")
     print("")'''
+>>>
+**********
+**********
+**********
+**********
+**********
 
-'''for y in range(4,0,-1):
+
+    
+'''for y in range(4,0,-1):  #아니면 for y in range(1,5):
     for x in range(1,5):
         print("*",end="")
     print()'''
+>>>
+****
+****
+****
+****
 
-'''for y in range(1,5):
-    for x in range(1,5):
-        print("*",end="")
-    print()'''
 
 '''for i in range(1, 6):
     print("*" * i)'''
@@ -49,19 +60,46 @@ print("사각형의 넓이 =", result)'''
         print("*",end="")
     print()'''
 
+
+
+    
 #continue
 for i in range (10):
     if i % 3==0:
         continue
     else:
         print(i)
+>>>
+1
+2
+4
+5
+7
+8
+
 
 for i in range(1, 11):
     if i % 3 == 0:
         continue
     else:
         print(i)
-print("aaa")
+    print("aaa")
+>>>
+1
+aaa
+2
+aaa
+4
+aaa
+5
+aaa
+7
+aaa
+8
+aaa
+10
+aaa
+
 
 for i in range (1,11):
     if i % 3==0:
@@ -69,6 +107,25 @@ for i in range (1,11):
     else:
         print(i)
     print("aaa")
+>>>
+1
+aaa
+2
+aaa
+aaa
+4
+aaa
+5
+aaa
+aaa
+7
+aaa
+8
+aaa
+aaa
+10
+aaa
+
 
 for i in range (1,11):
     if i % 3==0:
@@ -76,6 +133,13 @@ for i in range (1,11):
     else:
         print(i)
     print("aaa")
+>>>
+1
+aaa
+2
+aaa
+
+
 
 #입력&출력
 
@@ -152,7 +216,14 @@ def printPattern(rows=3, char="*"):
         print()
 
 printPattern()
+>>>
+*****
+*****
+*****
+*****
+*****
 
+    
 #제출 
 '''def printPattern(rows=5, cols=5, char="*"):
     for _ in range(rows):
